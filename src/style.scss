@@ -1,0 +1,19 @@
+
+@import "reset";
+@import "variables";
+@import "mixins";
+
+/* wrapper */
+.wrapper {
+    // display: grid;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+@import "navigation";
+@import "header";
+@import "main";
+@import "footer";

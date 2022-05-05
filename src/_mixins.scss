@@ -1,0 +1,39 @@
+/* mixins */
+
+@mixin title($fSize) {
+    font-family: $font_three;
+    font-size: $fSize;
+    text-align: center;
+    color: $grey-blue-strong;
+    // color: $black;
+}
+
+@mixin text($fSize) {
+    font-family: $font_four;
+    font-weight: 500;
+    font-size: $fSize;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: $grey-blue-strong;
+    // color: $black;
+}
+
+@mixin button {
+    text-align: center;
+    border: 2px solid $grey-blue-strong;
+    background: transparent;
+    color: $grey-blue-strong;
+    font-family: $font_four;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: .3s ease-out;
+
+    &:hover {
+        background: $grey-blue-strong;
+        color: $white;
+    }
+}

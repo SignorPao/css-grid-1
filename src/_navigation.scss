@@ -1,0 +1,42 @@
+/* navigation */
+
+.navigation {
+    display: grid;
+
+    .top-nav {
+        background-color: $grey-blue-strong;
+        padding: 10px 0;
+        grid-template: 1fr;
+        align-items: center;
+        z-index: 10000;
+        
+        & ul {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: end;
+            gap: 10px;
+            
+            & li {
+                color: $light-grey;
+                
+                & a {
+                    color: $white;
+                    font-family: $font_four;
+                    text-decoration: none;
+                    font-size: 0.6rem;
+                    font-weight: 700;
+                    
+                    &:hover {
+                        border-bottom: 1px solid $white;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 480px) {
+            ul li a {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
